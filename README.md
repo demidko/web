@@ -8,6 +8,8 @@ formatting is used. [`Ktor`](https://ktor.io/) is included to mock Digital Ocean
 1. Make sure you are signed in to your GitHub account, then just
    click [`here`](https://github.com/demidko/service/generate) to use template.
 2. `App.kt` file is entry point.
+3. How to use HTML-like DSL? Manual [at russian](https://habr.com/ru/post/580718/)
+   or [at english](https://github.com/kwebio/kweb-core).
 
 ## Build with Java
 
@@ -15,7 +17,7 @@ Execute `./gradlew clean build`. Your jar will be located at `./build/libs` with
 Now you can run:
 
 ```shell
-java -jar service-all.jar
+java -jar *-all.jar
 ```
 
 ## Or, build with Docker
@@ -24,7 +26,7 @@ Execute `docker build . -t service`. Your image will be located at `docker image
 run:
 
 ```shell
-docker run -v `pwd`:`pwd` -w `pwd` -it --rm service
+docker run -v `pwd`:`pwd` -w `pwd` -it --rm app
 ```
 
 ## Deploy

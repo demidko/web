@@ -1,16 +1,11 @@
-import io.ktor.application.*
-import io.ktor.http.HttpStatusCode.Companion.OK
-import io.ktor.response.*
-import io.ktor.routing.*
-import io.ktor.server.engine.*
-import io.ktor.server.netty.*
+import kweb.Kweb
+import kweb.h1
+import kweb.plugins.fomanticUI.fomanticUIPlugin
 
 fun main(args: Array<String>) {
-  localhostServer().start(true)
-}
-
-fun localhostServer() = embeddedServer(Netty) {
-  routing {
-    get("/") { call.respond(OK) }
+  Kweb(port = 80, debug = false, plugins = listOf(fomanticUIPlugin)) {
+    doc.body {
+      h1().text("Replace Me!")
+    }
   }
 }
