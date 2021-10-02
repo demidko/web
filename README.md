@@ -1,4 +1,4 @@
-# Service
+# Web application
 
 Kotlin microservice template produces self-executable jar application. For brevity, double-space
 formatting is used. [`Ktor`](https://ktor.io/) is included to mock Digital Ocean healthy checks.
