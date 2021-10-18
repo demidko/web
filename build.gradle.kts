@@ -4,7 +4,7 @@ repositories {
 }
 plugins {
   kotlin("jvm") version "1.5.31"
-  id("com.github.johnrengelman.shadow") version "7.0.0"
+  id("com.github.johnrengelman.shadow") version "7.1.0"
 }
 dependencies {
   implementation("com.github.kwebio:kweb-core:0.10.17")
