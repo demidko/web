@@ -13,14 +13,6 @@ dependencies {
   testImplementation("com.willowtreeapps.assertk:assertk-jvm:0.25")
   testImplementation("io.mockk:mockk:1.12.0")
 }
-tasks.compileKotlin {
-  kotlinOptions.jvmTarget = "1.8"
-  kotlinOptions.freeCompilerArgs += "-Xopt-in=kotlin.time.ExperimentalTime"
-}
-tasks.compileTestKotlin {
-  kotlinOptions.jvmTarget = "1.8"
-  kotlinOptions.freeCompilerArgs += "-Xopt-in=kotlin.time.ExperimentalTime"
-}
 tasks.test {
   useJUnitPlatform()
 }
